@@ -68,6 +68,7 @@
 
   > div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 60px;
     justify-content: center;
@@ -84,7 +85,7 @@
 
     &:nth-child(2) {
       p {
-        max-width: 120px;
+        //max-width: 120px;
       }
     }
   }
