@@ -31,6 +31,27 @@
       }
     }
   }
+
+  .tabs-content {
+    .slide {
+      display: none;
+      margin: 0 auto;
+
+      &.active {
+        display: block;
+      }
+
+      &:nth-child(2) {
+
+        &.active {
+          @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -122,6 +143,12 @@
 
     h4 {
       color: #F6961B;
+    }
+
+    .pricing-items {
+      span {
+        color: #F6961B;
+      }
     }
 
     button {
