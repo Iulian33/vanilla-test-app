@@ -53,6 +53,12 @@
       font-size: 16px;
       font-weight: 700;
       color: #fff;
+      transition: background .3s ease;
+
+      &:hover {
+        background: #c97c19;
+
+      }
     }
 
     .button-descriptor {

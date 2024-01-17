@@ -20,8 +20,11 @@
       color: #9CACD2;
       font-size: 16px;
       font-weight: 700;
+      transition: all .3s ease;
 
-      &.active {
+
+      &.active,
+      &:hover {
         background: #377DED;
         border: 1px solid #377DED;
         color: #fff;
@@ -104,6 +107,12 @@
     color: #377DED;
     font-size: 16px;
     font-weight: 700;
+    transition: all .3s ease;
+
+    &:hover {
+      background: #377DED;
+      color: #fff;
+    }
   }
 
 
@@ -118,6 +127,11 @@
     button {
       border: 1px solid #F6961B;
       color: #F6961B;
+
+      &:hover {
+        background: #F6961B;
+        color: #fff;
+      }
     }
   }
 }

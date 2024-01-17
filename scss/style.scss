@@ -6,6 +6,13 @@
 
 .app-main {
   padding: 80px 0;
+
+  &.main-404 {
+    padding: 190px 35px;
+    text-align: center;
+
+    h1 {
+      font-size: 45px;
+    }
+  }
 }
-
-
