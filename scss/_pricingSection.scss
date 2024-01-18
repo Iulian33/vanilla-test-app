@@ -33,20 +33,32 @@
   }
 
   .tabs-content {
+    min-height: 500px;
+
     .slide {
+      position: relative;
+      top: 70px;
       display: none;
       margin: 0 auto;
+      opacity: 0;
+      transition: opacity .8s ease-in-out, top .8s ease;
 
       &.active {
         display: block;
+        opacity: 1;
+        top: 0;
       }
 
       &:nth-child(2) {
+        @media screen and (min-width: 992px) {
+          justify-content: center;
+          width: 100%;
+        }
+
 
         &.active {
           @media screen and (min-width: 992px) {
             display: flex;
-            justify-content: center;
           }
         }
       }
