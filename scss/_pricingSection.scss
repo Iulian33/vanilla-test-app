@@ -150,8 +150,23 @@
 
 
   &.popular {
+    position: relative;
     border: 2px solid #F6961B;
     background: #FFF6EA;
+
+    &:before {
+      content: "Most popular";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      display: inline-block;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 50px;
+      background: #F6961B;
+    }
 
     h4 {
       color: #F6961B;
