@@ -1,12 +1,15 @@
 .top-header-bar {
   background: #377DED;
   color: #fff;
+  overflow: hidden;
   padding: 5px 0;
 
   .top-list-item {
     font-weight: 600;
+    font-size: 12px;
     line-height: 140%;
     text-align: center;
+
 
     img {
       padding-right: 8px;
@@ -22,11 +25,25 @@
   background: #FBFCFF;
   box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.06);
 
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    padding-top: 10px;
+
+    @media screen and (max-width: 830px) {
+      display: block;
+    }
+  }
+
   .menu-items {
     padding: 0;
     font-weight: 700;
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 830px) {
+      display: none;
+    }
 
 
     li {
@@ -57,6 +74,10 @@
 
   @media screen and (max-width: 992px) {
     gap: 10px;
+  }
+
+  @media screen and (max-width: 830px) {
+    justify-content: space-between;
   }
 
   .header-actions {
