@@ -8,11 +8,14 @@ html {
   line-height: 1.4;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body, * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box !important;
-  margin: 0;
-  padding: 0;
 }
 
 body {
